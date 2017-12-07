@@ -1,146 +1,195 @@
-\documentclass[]{twentysecondcv}
- 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Twenty Seconds Resume/CV
+% LaTeX Template
+% Version 1.1 (8/1/17)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
+% Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[letterpaper]{twentysecondcv} % a4paper for A4
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+% no need to install latex - https://www.overleaf.com/
+
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+\profilepic{avatar.jpeg} % Profile picture
+
+\cvname{Mateusz Koslacz} % Your name
+\cvjobtitle{Tech Lead/Android Architect} % Job title/career
+
+\cvaddress{Warsaw, Poland} % Short address/location, use \newline if more than 1 line is required
+\cvnumberphone{OBFUSCATED} % Phone number
+\cvsite{http://mateuszkoslacz.com} % Personal website
+\cvmail{contact@mateuszkoslacz.com} % Email address
+\cvdate{} % Date of birth
+
+
+%----------------------------------------------------------------------------------------
+
 \begin{document}
 
-%%%%%%%%%%%%%%%%%
-%%PROFILE SIDE BAR%%
-%%%%%%%%%%%%%%%%%
-
-%%%%%%%%%%%%%%%%
-%%PERSONAL INFO%%%
-%%%%%%%%%%%%%%%%
-
-\profilepic{alice.jpeg} %path of profile pic
-\cvname{Alice} %your name
-\cvjobtitle{Adventurer}%your actual job position
-\cvdate{26 November 1865}%date of birth
-\cvaddress{United Kingdom}%address
-\cvnumberphone{+39 0325658974}%telphone number
-\cvmail{alice@wonderland.com}%e-mail
-\cvsite{http://en.wikipedia.org}%personal site
-
+%----------------------------------------------------------------------------------------
+%	 ABOUT ME
+%----------------------------------------------------------------------------------------
 
 \aboutme{
-Alice is a sensible prepubescent girl from a wealthy English family who finds herself in a strange world ruled by imagination and fantasy. Alice feels comfortable with her identity and has a strong sense that her environment is comprised of clear, logical, and consistent rules and features. Alice's familiarity with the world has led one critic to describe her as a "disembodied intellect". Alice displays great curiosity and attempts to fit her diverse experiences into a clear understanding of the world.}%About me section
+- Android Architect,\\
+- Team leader,\\
+- Scrum Master,\\
+- 6 years of a commercial Android\\ \hspace{2mm} development experience,\\ % ugly hacks here :(
+- MEng in Computer Sciences,\\
+- Natural soft skills strenghtened\\ \hspace{2mm} by management training,\\
+- Clean architecture, Kotlin,\\ \hspace{2mm} RxJava \& TDD Evangelist,\\
+- 1M MAU and 200k DAU on\\ \hspace{2mm} my architecture with CFU >99,5\%.}
+ % To have no About Me section, just remove all the text and leave \aboutme{}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%Skill bar section, each skill must have a value between 0 an 6 (float)%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\skills{{pursuer of rabbits/5.8},{good manners/4},{outgoing/4.3},{polite/4},{Java/0.01}}
+%----------------------------------------------------------------------------------------
+%	 SKILLS
+%----------------------------------------------------------------------------------------
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%Skill text section, each skill must have a value between 0 an 6%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\skillstext{{lovely/4},{narcissistic/3}}
 
-\makeprofile
-%%%%%%%%%%%%%%%%%%%%
-%%END PROFILE SIDE BAR%%
-%%%%%%%%%%%%%%%%%%%%
+% - Android 90%
+% - Software Architecting 90%
+% - TDD (from Unit tests to e2e tests) 90%
+% - Kotlin 90%
+% - RxJava 90%
+% - Team Management 80%
+% - Scrum 80%
+% - Java 75%
+% - iOS & Swift 30%
+% Skill bar section, each skill must have a value between 0 an 6 (float)
+\skills{{iOS (code review level)/2},{Team Management/5}, {Scrum/5},{Java/5.1},{Kotlin/5.1},{RxJava/5.2},{TDD/5.2},{Software Architecting/5.4}, {Android/5.4}}
 
-%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%BODY%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%
+%------------------------------------------------
 
-%%%%%%%%%%%%%%%%%%%%
-%%SIMPLE SECTION%%%%%%
-%%%%%%%%%%%%%%%%%%%%
-\section{interests}
-The heroine and the dreamer of Wonderland;  Alice is the principal character.
+% % Skill text section, each skill must have a value between 0 an 6
+% \skillstext{{iOS (code review level)/3}}
 
-\section{education}
+%----------------------------------------------------------------------------------------
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%TWENTY LIST ITEMS%%%%%%%%%%%%%%
-%%    Four arguments: date; title; where; description %%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{twenty}
-  \twentyitem
-    {since 1865}
-    {Ph.D. {\normalfont candidate in Computer Science}}
-    {Wonderland}
-    {\emph{A Quantified Theory of Social Cohesion.}}
-  \twentyitem
-    {1863-1865}
-    {M.Sc. magna cum laude}
-    {Wonderland}
-    {Majoring in Computer Science}
-  \twentyitem
-    {1861-1863}
-    {B.Sc. magna cum laude}
-    {Wonderland}
-    {Majoring in Computer Science}
-  \twentyitem
-    {1856-1861}
-    {High school}
-    {Wonderland}
-    {Specializing in mathematics and physics.}
+\makeprofile % Print the sidebar
+
+
+%----------------------------------------------------------------------------------------
+%	 EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem{12.2016 --\\-- present}{Tech Lead}{Wirtualna Polska}{Architecting Android apps from scratch, developing the hardest parts, managing a multiplatform (Android\&iOS) team, coaching and mentoring developers, playing the Scrum Master role, leading a technical way in both platforms, evaluating and managing work, buisness consulting.}
+	\twentyitem{03.2016 --\\-- 11.2016}{Senior Android Developer}{Wirtualna Polska}{Developing the hardest parts of Android apps, taking part in choosing technologies in the company, participating in architecting Android apps, evaluating work, buisness consulting, teaching less experienced developers RxJava, Dagger2, Kotlin, MVP/VIPER/MVVM/MVI, TDD (unit tests with Mockito, integration tests with Robolectric, e2e tests with Espresso), Retrofit, etc.}
+	\twentyitem{03.2014 --\\-- 02.2016}{Android Developer}{4vod.tv}{Developing Android apps. Managing Google Play site from developer perspective. Sometimes developing Wowza Server modules.}
+    	\twentyitem{03.2012 --\\-- 02.2014}{Java/Android Developer}{National Institute of Telecommunications}{Developing Android apps. Creating backend \& frontend in Java using Vaadin framework.}
+	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
 \end{twenty}
 
+%----------------------------------------------------------------------------------------
+%	 EDUCATION
+%----------------------------------------------------------------------------------------
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%TWENTY LIST SHORTITEMS%%%%%%%%%%%%%%
-%%% Two arguments: date; title/description %%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{publications}
+\section{Education}
 
-\begin{twentyshort}
-  \twentyitemshort
-    {1865}
-    {Chapter One, Down the Rabbit Hole.}
-  \twentyitemshort
-    {1865}
-    {Chapter Two, The Pool of Tears.}
-  \twentyitemshort
-    {1865}
-    {Chapter Three,  The Caucus Race and a Long Tale.}
-  \twentyitemshort
-    {1865}
-    {Chapter Four,  The Rabbit Sends a Little Bill.}
-  \twentyitemshort
-    {1865}
-    {Chapter Five,  Advice from a Caterpillar.}
-\end{twentyshort}
-
-
-
-\section{awards}
-
-\begin{twentyshort}
-  \twentyitemshort
-    {1987}
-    {All-Time Best Fantasy Novel.}
-  \twentyitemshort
-    {1998}
-    {All-Time Best Fantasy Novel before 1990.}
-\end{twentyshort}
-
-
-\section{experience}
-
-\begin{twenty}
-  \twentyitem
-    {1900}
-    {Alice in Wonderland-The Circra (1900's) Silent Film.}
-    {Film}
-    {The first Alice on film was over a hundred years ago.}
-  \twentyitem
-    {1933}
-    {Alice in Wonderland 1933 version.}
-    {Film}
-    {This film stars Ethel griffies and Charlotte Henry. It was a box office flop when it was released.}
-\twentyitem
-    {1951}
-    {Disney Film.}
-    {Film}
-    {Walt Disney brings Lewis Carroll's fantasy story to life in this well done animated classic. Even though many elements from the book were dropped, such as the duchess with the baby pig and mock turtle, this version is without a doubt the most famous Alice adaption made.}
-
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem{03.2014 --\\-- 02.2015}{MEng in Computer Sciences}{Warsaw University of Technology}{Thesis title: \textit{Image processing and artificial intelligence alghoritms in the selection of clothes}}
+	\twentyitem{10.2010 --\\-- 02.2014}{B.Eng in Electrical and Computer Eng.}{Warsaw University of Technology}{Thesis title: \textit{Interactive television -- The LDUiTV Project -- Application for creating the interactive playlist}}
+	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
 \end{twenty}
-\section{other information}
-Alice approaches Wonderland as an anthropologist, but maintains a strong sense of noblesse oblige that comes with her class status. She has confidence in her social position, education, and the Victorian virtue of good manners. Alice has a feeling of entitlement, particularly when comparing herself to Mabel, whom she declares has a “poky little house,” and no toys. Additionally, she flaunts her limited information base with anyone who will listen and becomes increasingly obsessed with the importance of good manners as she deals with the rude creatures of Wonderland. Alice maintains a superior attitude and behaves with solicitous indulgence toward those she believes are less privileged.
 
-%%%%%%%%%%%%%%%%%%%%
-%%%%%ENDBODY%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%
+%----------------------------------------------------------------------------------------
+%	 LANGUAGES
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+
+\begin{twentyshort} % Environment for a short list with no descriptions
+	\twentyitemshort{English}{Advanced,}
+	\twentyitemshort{Polish}{Native.}
+\end{twentyshort}
+
+%----------------------------------------------------------------------------------------
+%	 INTERESTS
+%----------------------------------------------------------------------------------------
+
+\section{Interests}
+
+\begin{twentyshort} % Environment for a short list with no descriptions
+	\twentyitemshort{--}{mobile architecture,}
+	\twentyitemshort{--}{leading, coaching \& mentoring techniques,}
+	\twentyitemshort{--}{libraries development,}
+	\twentyitemshort{--}{tech blogging,}
+	\twentyitemshort{--}{neural networks,}
+    \twentyitemshort{--}{image processing,}
+    \twentyitemshort{--}{mnemonics.}
+	%\twentyitemshort{<dates>}{<title/description>}
+\end{twentyshort}
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL STATEMENT
+%----------------------------------------------------------------------------------------
+
+\section{Personal statement}
+
+I'm an Android enthusiast who loves to work with people. I provide a full spectrum of services - from architecting and developing the hardest parts of code, to teaching, coaching and mentoring my subordinates. I believe that good code has four inseparable qualities: it works as expected, it's easy readable, it's fully tested, and is easy expandable. I strongly believe in SCRUM methodology, and often take the role of the SCRUM master of the team. I encourage my developers to use technologies they find interesting, making sure they still find their work fun and challenging. I do my best to find a balance between step-by-step guiding and controlling junior developers and giving a free choice for more advanced ones.
+
+% ## Extras
+% - read my blog
+% - see my libraries
+% - see my CV app
+% - analyze it's code
+
+% %----------------------------------------------------------------------------------------
+% %	 PUBLICATIONS
+% %----------------------------------------------------------------------------------------
+
+% \section{Publications}
+
+% \begin{twentyshort} % Environment for a short list with no descriptions
+% 	\twentyitemshort{1865}{Chapter One, Down the Rabbit Hole.}
+% 	\twentyitemshort{1865}{Chapter Two, The Pool of Tears.}
+% 	\twentyitemshort{1865}{Chapter Three,  The Caucus Race and a Long Tale.}
+% 	\twentyitemshort{1865}{Chapter Four,  The Rabbit Sends a Little Bill.}
+% 	\twentyitemshort{1865}{Chapter Five,  Advice from a Caterpillar.}
+% 	%\twentyitemshort{<dates>}{<title/description>}
+% \end{twentyshort}
+
+%----------------------------------------------------------------------------------------
+%	 SECOND PAGE EXAMPLE
+%----------------------------------------------------------------------------------------
+
+%\newpage % Start a new page
+
+%\makeprofile % Print the sidebar
+
+%\section{Other information}
+
+%\subsection{Review}
+
+%Alice approaches Wonderland as an anthropologist, but maintains a strong sense of noblesse oblige that comes with her class status. She has confidence in her social position, education, and the Victorian virtue of good manners. Alice has a feeling of entitlement, particularly when comparing herself to Mabel, whom she declares has a ``poky little house," and no toys. Additionally, she flaunts her limited information base with anyone who will listen and becomes increasingly obsessed with the importance of good manners as she deals with the rude creatures of Wonderland. Alice maintains a superior attitude and behaves with solicitous indulgence toward those she believes are less privileged.
+
+%\section{Other information}
+
+%\subsection{Review}
+
+%Alice approaches Wonderland as an anthropologist, but maintains a strong sense of noblesse oblige that comes with her class status. She has confidence in her social position, education, and the Victorian virtue of good manners. Alice has a feeling of entitlement, particularly when comparing herself to Mabel, whom she declares has a ``poky little house," and no toys. Additionally, she flaunts her limited information base with anyone who will listen and becomes increasingly obsessed with the importance of good manners as she deals with the rude creatures of Wonderland. Alice maintains a superior attitude and behaves with solicitous indulgence toward those she believes are less privileged.
+
+%----------------------------------------------------------------------------------------
 
 \end{document} 
