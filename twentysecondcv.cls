@@ -162,10 +162,9 @@
 		\skills
 		\skillstext
 		\scriptsize
-		(*)[The skill scale is from 0 (Fundamental Awareness) to 6 (Expert).]
-			
+
 		%------------------------------------------------
-			
+
 	\end{textblock}
 }
 
@@ -183,17 +182,17 @@
 	{%
 		\round{#1}{
 			\ifcase\value{colorCounter}%
-			maingray\or%
 			mainblue\or%
-			maingray\or%
 			mainblue\or%
-			maingray\or%
 			mainblue\or%
-			maingray\or%
 			mainblue\or%
- 			maingray\or%
+			mainblue\or%
+			mainblue\or%
+			mainblue\or%
+			mainblue\or%
+ 			mainblue\or%
 			mainblue\else%
-			maingray\fi%
+			mainblue\fi%
 		}%
 	}%
 	\stepcounter{colorCounter}%
@@ -227,11 +226,11 @@
 }
 
 \newcommand{\twentyitem}[4]{%
-	#1&\parbox[t]{0.83\textwidth}{%
+	\parbox[t]{0.15\textwidth}{#1}&\parbox[t]{0.8\textwidth}{%
 		\textbf{#2}%
 		\hfill%
 		{\footnotesize#3}\\%
-		#4\vspace{\parsep}%
+		#4\vspace{2\parsep}%
 	}\\
 }
 
